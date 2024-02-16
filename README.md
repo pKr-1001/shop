@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Created for code sampler due to not having any React file or other framework last year.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
