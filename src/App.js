@@ -23,6 +23,7 @@ function App() {
         </Container>
       </Navbar>
 
+        {/* setting routes */}
         <Routes>
             <Route path='/' element = {
                 <>
@@ -49,6 +50,8 @@ function App() {
         }/>
         {/* routes to detail/0~2 exisis
             /detail was set to give 404
+
+            multiple routes under /event and /about
         */}
         <Route path='/detail/:id' element={<Detail shoes={shoes} ></Detail>}></Route>
             <Route path='/about' element={<About></About>}>
@@ -65,6 +68,7 @@ function App() {
   );
 }
 
+// component for any event 
 function Event() {
     return(
         <div>
@@ -74,6 +78,7 @@ function Event() {
     )
 }
 
+// component for general info about company
 function About() {
     return (
         <div>
@@ -83,7 +88,9 @@ function About() {
     )
 }
 
-function Detail(props) {
+// component for each shoes
+// with id parameter
+function Detail(props) {s
     let {id} = useParams();
     return (
         <div className='containter'>
